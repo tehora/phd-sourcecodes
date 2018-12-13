@@ -1,0 +1,26 @@
+#!/bin/sh
+export AG=../../agregaty
+export AAG=../agregaty
+
+cd gha
+make $AG/gha/nodes_gharchive.csv
+cd ..
+
+cd laczenie_grafow
+make all
+cd ..
+
+cd users_char
+make all
+cd ..
+
+cd graphbuild
+make $AG/ktoto.csv
+cd ..
+
+echo ktoto2...
+grep "^l" $AAG/ktoto.csv > $AAG/ktoto2.csv
+
+cd logit
+make $AG/logit/tabela.csv
+cd ..

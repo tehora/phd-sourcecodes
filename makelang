@@ -1,0 +1,11 @@
+#!/bin/sh
+export AG=../../agregaty
+
+cd gha
+make $AG/gha/commentevent/comments1.csv || return
+cd ..
+
+cd language_det
+make $AG/language_det/issue_comments.csv || return
+cd ..
+

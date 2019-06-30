@@ -28,8 +28,8 @@ $(BIN)/crawl/fork: fork.cpp ../ghutils.h
 $(AG)/crawl/forking/forking_cat.csv: $(RAW)/crawl/forking/members2_full.csv $(RAW)/crawl/forking/members2_0603a.csv $(RAW)/crawl/forking/members2_0603.csv $(RAW)/crawl/forking/members2_2002.csv
 	cat $^ >$@
 
-$(AG)/crawl/forking/forking_a.csv: $(BIN)/crawl/fork $(AG)/crawl/forking/forking_odwroc.csv $(AG)/crawl/forking/forking_cat.csv
-	./$(BIN)/crawl/fork $(AG)/crawl/forking/forking_odwroc.csv $(AG)/crawl/forking/forking_cat.csv $@
+$(AG)/crawl/forking/forking_a.csv: $(BIN)/crawl/fork $(AG)/crawl/forking/forking_rev.csv $(AG)/crawl/forking/forking_cat.csv
+	./$(BIN)/crawl/fork $(AG)/crawl/forking/forking_rev.csv $(AG)/crawl/forking/forking_cat.csv $@
 
 $(AG)/crawl/forking/forking_graph_crawl.csv: $(AG)/crawl/forking/forking_a.csv
 	sort $^ | uniq -d >duplic

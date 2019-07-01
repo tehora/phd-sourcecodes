@@ -52,30 +52,30 @@ void extract(const char* plik, int fala) {
 }  
 
 int main(int argc, char **argv) {
-    extract("../../rawdata/crawl/repozytoria/repo2_0402.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repo2_0601.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repo2_0604.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repo2_0904.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repo2_1004.csv",1);
-    extract("../../rawdata/crawl/repozytoria/repo2_1604.csv",1);
-    extract("../../rawdata/crawl/repozytoria/repo2_2304.csv",1);
-    extract("../../rawdata/crawl/repozytoria/repo2_fala.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repozytoria2404b.csv",2);
-    extract("../../rawdata/crawl/repozytoria/repozytoria2404a.csv",3);
-    extract("../../rawdata/crawl/repozytoria/repozytoria2404c.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_1409.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_1808.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_1809.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_1909.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2008.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2108.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2208.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2308.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2408.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_2608.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo2.csv",1);
-    extract("../../rawdata/crawl/repozytoria/pierwsza_fala/repo_amsterdam.csv",1);
-    extract("../../rawdata/crawl/repozytoria/repo3_0801.csv",4);
+    extract("../../rawdata/crawl/repositories/repo2_0402.csv",2);
+    extract("../../rawdata/crawl/repositories/repo2_0601.csv",2);
+    extract("../../rawdata/crawl/repositories/repo2_0604.csv",2);
+    extract("../../rawdata/crawl/repositories/repo2_0904.csv",2);
+    extract("../../rawdata/crawl/repositories/repo2_1004.csv",1);
+    extract("../../rawdata/crawl/repositories/repo2_1604.csv",1);
+    extract("../../rawdata/crawl/repositories/repo2_2304.csv",1);
+    extract("../../rawdata/crawl/repositories/repo2_fala.csv",2);
+    extract("../../rawdata/crawl/repositories/repositories2404b.csv",2);
+    extract("../../rawdata/crawl/repositories/repositories2404a.csv",3);
+    extract("../../rawdata/crawl/repositories/repositories2404c.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_1409.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_1808.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_1809.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_1909.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2008.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2108.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2208.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2308.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2408.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_2608.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo2.csv",1);
+    extract("../../rawdata/crawl/repositories/first_wave/repo_amsterdam.csv",1);
+    extract("../../rawdata/crawl/repositories/repo3_0801.csv",4);
 
     for (auto repo_star: repo_stars) {
         stars_obtained[repo_star.first.first] += repo_star.second;
